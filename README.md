@@ -11,11 +11,14 @@ so please do not attempt anything without careful consideration.
 * Install Ansible
 * Clone this repository
 * Connect over SSH and edit the `/etc/ssh/sshd_config` to update the `AllowUsers` to include your unique user
+
     ```plaintext
     AllowUsers admin myuser
     ```
+
 * Add a public key to `~/.ssh/authorized_keys` (disable SSH password authentication in `/etc/ssh/sshd_config` if you like)
 * Change the permissions on `/dev/null` to `666` to prevent an Ansible failure
+
     ```console
     $ sudo chmod 666 /dev/null
     $ ls -l /dev/null

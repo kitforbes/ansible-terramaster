@@ -4,4 +4,4 @@
   become_method: sudo
   become_user: root
   tasks:
-    - ping:
+  - ping:
